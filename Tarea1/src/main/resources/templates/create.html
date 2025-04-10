@@ -6,12 +6,34 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
-
         <div th:replace="fragments :: menu"></div>
 
         <div class="container mt-5">
             <h2>Registrar Nuevo Empleado</h2>
-            <div th:replace="fragments :: employeeForm (${newEmployee})"></div>
+            <form th:action="@{/employee/save}" th:method="post" th:object="${employee}">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" th:field="*{nombre}" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" th:field="*{apellido}" required>
+                </div>
+                <div class="form-group">
+                    <label for="puesto">Puesto:</label>
+                    <input type="text" class="form-control" id="puesto" th:field="*{puesto}" required>
+                </div>
+                <div class="form-group">
+                    <label for="departamento">Departamento:</label>
+                    <input type="text" class="form-control" id="departamento" th:field="*{departamento}" required>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" class="form-control" id="ciudad" th:field="*{ciudad}" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <a href="/employees" class="btn btn-secondary">Cancelar</a>
+            </form>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
