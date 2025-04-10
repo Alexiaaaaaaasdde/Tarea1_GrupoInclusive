@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- templates/fragments.html -->
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!-- Aquí está el fragmento llamado "menu" -->
+<div th:fragment="menu">
+    <nav>
+        <ul>
+            <li><a th:href="@{/employee/list}">Empleados</a></li>
+            <li><a th:href="@{/history}">Historial</a></li>
+            <li><a th:href="@{/report}">Reporte Visual</a></li>
+        </ul>
+    </nav>
+    <hr/>
+</div>
+</body>
+</html>
