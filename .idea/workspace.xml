@@ -5,14 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9aa28f2-3dbb-4132-8e8c-2b7e22dae233" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/HistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/DepartmentPerCityDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/ExperiencedManagerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/HighSalaryReportDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/history/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Tarea1_GrupoInclusive.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tarea1_GrupoInclusive.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/employee/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/employee/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/employee/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/employee/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="package.json" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,13 +62,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "JavaScript Debug.create.html.executor": "Run",
     "JavaScript Debug.edit.html.executor": "Run",
     "JavaScript Debug.list.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ASUS/OneDrive/Escritorio/Tarea1_GrupoInclusive",
+    "last_opened_file_path": "C:/Users/ASUS/OneDrive/Escritorio/Tarea1_GrupoInclusive/Tarea1/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,6 +78,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\OneDrive\Escritorio\Tarea1_GrupoInclusive\Tarea1\src\main\java\com\example\tarea3\controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ASUS\OneDrive\Escritorio\Tarea1_GrupoInclusive\Tarea1\src\main\resources\templates" />
+      <recent name="C:\Users\ASUS\OneDrive\Escritorio\Tarea1_GrupoInclusive\Tarea1\src\main\resources\templates\employee" />
+      <recent name="C:\Users\ASUS\OneDrive\Escritorio\Tarea1_GrupoInclusive\Tarea1\src\main\java\com\example\tarea3" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -72,6 +106,8 @@
       <updated>1744250719374</updated>
       <workItem from="1744250720555" duration="253000" />
       <workItem from="1744251006723" duration="1374000" />
+      <workItem from="1744337312893" duration="12000" />
+      <workItem from="1745036566537" duration="3502000" />
     </task>
     <servers />
   </component>

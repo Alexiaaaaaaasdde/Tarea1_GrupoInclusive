@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Editar Empleado</title>
+        <head th:replace="~{fragments :: head}"></head>
+    </head>
+    <body>
+        <div th:replace="~{fragments :: menu}"></div>
+        <div class="container mt-5">
+            <h2>Editar Empleado</h2>
+            <form th:action="@{/employee/update}" th:object="${employee}" method="post">
+                <div class="row">
+                    <input type="hidden" th:field="*{employeeId}" />
+
+                    <div class="col-md-6">
+                        <label>Nombre:</label>
+                        <input type="text" class="form-control" th:field="*{firstName}" required />
+                    </div>
+
+                    <div class="col-md-6">
+                        <label>Apellido:</label>
+                        <input type="text" class="form-control" th:field="*{lastName}" required />
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <label>Correo Electrónico:</label>
+                        <input type="email" class="form-control" th:field="*{email}" required />
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <label>Contraseña:</label>
+                        <input type="password" class="form-control" name="password" />
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <label>Puesto:</label>
+                        <select th:field="*{job.jobId}">
+                            <option value="">-- Selecciona --</option>
+                            <option th:each="j : ${jobs}"
+                                    th:value="${j.jobId}"
+                                    th:text="${j.jobTitle}">
+                            </option>
+                        </select>
+
+
+
+
+                        <option value="">-- Selecciona --</option>
+                            <option value="President">President</option>
+                            <option value="Administration Vice President">Administration Vice President</option>
+                            <option value="Public Accountant">Public Accountant</option>
+                            <option value="Programmer">Programmer</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <label>Sueldo:</label>
+                        <input type="number" step="0.01" class="form-control" th:field="*{salary}" />
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <label>Jefe:</label>
+                        <select th:field="*{manager.employeeId}">
+                            <option value="">-- Selecciona --</option>
+                            <option th:each="m : ${managers}"
+                                    th:value="${m.employeeId}"
+                                    th:text="${m.firstName + ' ' + m.lastName}">
+                            </option>
+                        </select>
+
+
+
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <label>Departamento:</label>
+                        <select th:field="*{department.departmentId}">
+                            <option value="">-- Selecciona --</option>
+                            <option th:each="d : ${departments}"
+                                    th:value="${d.departmentId}"
+                                    th:text="${d.departmentName}">
+                            </option>
+                        </select>
+
+
+
+                    </div>
+
+                    <div class="col-md-12 mt-4 text-end">
+                        <a th:href="@{/employee}" class="btn btn-danger">Cancelar</a>
+                        <button type="submit" class="btn btn-primary">Actualizar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div th:replace="~{fragments :: scripts}"></div>
+    </body>
+</html>

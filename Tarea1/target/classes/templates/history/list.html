@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="~{fragments :: head}"></head>
+    <body>
+        <div th:replace="~{fragments :: menu}"></div>
+        <div class="container mt-4">
+            <h2>Historial de Empleados</h2>
+
+            <form method="get" th:action="@{/history}" class="mb-3">
+                <input type="text" name="keyword" th:value="${keyword}" placeholder="Texto a buscar" />
+                <button type="submit" class="btn btn-primary">Buscar</button>
+                <a th:href="@{/history}" class="btn btn-danger">Limpiar</a>
+            </form>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Puesto</th>
+                        <th>Departamento</th>
+                        <th>Fecha Inicio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="e : ${employees}">
+                        <td th:text="${e.firstName}"></td>
+                        <td th:text="${e.lastName}"></td>
+                        <td th:text="${e.job.jobTitle}"></td>
+                        <td th:text="${e.department.departmentName}"></td>
+                        <td th:text="${#temporals.format(e.hireDate, 'yyyy-MM-dd')}"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div th:replace="~{fragments :: scripts}"></div>
+    </body>
+</html>

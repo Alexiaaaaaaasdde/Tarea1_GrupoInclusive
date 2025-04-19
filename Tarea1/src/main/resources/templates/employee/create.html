@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Nuevo Empleado</title>
+        <head th:replace="~{fragments :: head}"></head>
+    <body>
+        <div th:replace="~{fragments :: menu}"></div>
+        <h2>Nuevo Empleado</h2>
+        <form th:action="@{/employee/save}" th:object="${employee}" method="post">
+            <label>Nombre:</label>
+            <input type="text" th:field="*{firstName}" required/><br/>
+
+            <label>Apellido:</label>
+            <input type="text" th:field="*{lastName}" required/><br/>
+
+            <label>Correo Electrónico:</label>
+            <input type="email" th:field="*{email}" required/><br/>
+
+            <label>Contraseña:</label>
+            <input type="password" name="password" /><br/>
+
+            <label>Puesto:</label>
+            <select th:field="*{job}">
+                <option th:each="job : ${jobs}" th:value="${job}" th:text="${job.jobTitle}"></option>
+            </select><br/>
+
+            <label>Sueldo:</label>
+            <input type="number" step="0.01" th:field="*{salary}" /><br/>
+
+            <label>Jefe:</label>
+            <select th:field="*{manager}">
+                <option th:each="manager : ${managers}"
+                        th:value="${manager}"
+                        th:text="${manager.firstName + ' ' + manager.lastName}">
+                </option>
+            </select>
+
+
+            <br/>
+
+            <label>Departamento:</label>
+            <select th:field="*{department}">
+                <option th:each="dept : ${departments}" th:value="${dept}" th:text="${dept.departmentName}"></option>
+            </select><br/>
+
+            <button type="submit">Registrar</button>
+            <a th:href="@{/employee}"><button type="button">Cancelar</button></a>
+        </form>
+        <div th:replace="~{fragments :: scripts}"></div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="~{fragments :: head}">
+    <title>Lista de Empleados</title>
+  </head>
+  <body>
+
+    <!-- Menú de navegación -->
+    <div th:replace="~{fragments :: menu}"></div>
+
+    <div class="container">
+      <h1>Lista de Empleados</h1>
+
+      <form th:action="@{/employee}" method="get">
+        <input type="text" name="filter" placeholder="Buscar por nombre o apellido" th:value="${filter}" />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Contratación</th>
+            <th>Trabajo</th>
+            <th>Salario</th>
+            <th>Comisión</th>
+            <th>Jefe</th>
+            <th>Departamento</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr th:each="employee : ${employeeList}">
+            <td th:text="${employee.employeeId}"></td>
+            <td th:text="${employee.firstName}"></td>
+            <td th:text="${employee.lastName}"></td>
+            <td th:text="${employee.email}"></td>
+            <td th:text="${employee.phoneNumber}"></td>
+            <td th:text="${employee.hireDate}"></td>
+            <td th:text="${employee.job.jobTitle}">...</td>
+            <td th:text="${employee.salary}"></td>
+            <td th:text="${employee.commissionPct}"></td>
+            <td th:text="${employee.manager != null ? employee.manager.firstName + ' ' + employee.manager.lastName : 'Sin jefe'}"></td>
+            <td th:text="${employee.department != null ? employee.department.departmentName : 'Sin depto'}"></td>
+            <td>
+              <a th:href="@{'/employee/edit/' + ${employee.employeeId}}">Editar</a> |
+              <a th:href="@{'/employee/delete/' + ${employee.employeeId}}" onclick="return confirm('¿Estás seguro?')">Eliminar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Scripts -->
+    <div th:replace="~{fragments :: scripts}"></div>
+  </body>
+</html>
