@@ -1,11 +1,14 @@
 package com.example.tarea3.controller;
-
 import com.example.tarea3.dto.DepartamentoPorCiudadDTO;
 import com.example.tarea3.dto.GerenteExperienciaDTO;
 import com.example.tarea3.model.Employee;
 import com.example.tarea3.repository.DepartmentRepository;
 import com.example.tarea3.repository.EmployeeRepository;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @Controller
@@ -42,6 +45,4 @@ public class SearchController {
         model.addAttribute("gerentes", lista);
         return "search/gerentes_experimentados";
     }
-
-
 }
