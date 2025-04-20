@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9aa28f2-3dbb-4132-8e8c-2b7e22dae233" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/HistoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/DepartmentPerCityDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/ExperiencedManagerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/HighSalaryReportDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/history/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Tarea1_GrupoInclusive.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tarea1_GrupoInclusive.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/employee/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/employee/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/employee/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/fragments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/employee/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/model/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/model/Job.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +38,9 @@
     &quot;accountId&quot;: &quot;1dfeac18-2370-409a-ae17-583e1dc0fe23&quot;
   }
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -66,6 +55,7 @@
     "JavaScript Debug.create.html.executor": "Run",
     "JavaScript Debug.edit.html.executor": "Run",
     "JavaScript Debug.list.html.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -75,6 +65,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.2124834",
+    "project.structure.side.proportion": "0.26644182",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,14 +82,6 @@
       <recent name="C:\Users\ASUS\OneDrive\Escritorio\Tarea1_GrupoInclusive\Tarea1\src\main\java\com\example\tarea3" />
     </key>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -108,6 +94,7 @@
       <workItem from="1744251006723" duration="1374000" />
       <workItem from="1744337312893" duration="12000" />
       <workItem from="1745036566537" duration="3502000" />
+      <workItem from="1745169607897" duration="698000" />
     </task>
     <servers />
   </component>
