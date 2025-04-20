@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9aa28f2-3dbb-4132-8e8c-2b7e22dae233" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/DepartamentoPorCiudadDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/search/departamentos_por_ciudad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/search/gerentes_experimentados.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/search/salarios_altos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/DepartmentPerCityDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/ExperiencedManagerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/GerenteExperienciaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/repository/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/repository/DepartmentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,29 +59,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.create.html.executor": "Run",
-    "JavaScript Debug.edit.html.executor": "Run",
-    "JavaScript Debug.list.html.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ASUS/OneDrive/Escritorio/Tarea1_GrupoInclusive/Tarea1/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.2124834",
-    "project.structure.side.proportion": "0.26644182",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.create.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.edit.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.list.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/OneDrive/Escritorio/Tarea1_GrupoInclusive/Tarea1/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.2124834&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.26644182&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\OneDrive\Escritorio\Tarea1_GrupoInclusive\Tarea1\src\main\java\com\example\tarea3\controller" />
@@ -96,7 +104,8 @@
       <workItem from="1744251006723" duration="1374000" />
       <workItem from="1744337312893" duration="12000" />
       <workItem from="1745036566537" duration="3502000" />
-      <workItem from="1745169607897" duration="3445000" />
+      <workItem from="1745169607897" duration="4235000" />
+      <workItem from="1745173925986" duration="669000" />
     </task>
     <servers />
   </component>
