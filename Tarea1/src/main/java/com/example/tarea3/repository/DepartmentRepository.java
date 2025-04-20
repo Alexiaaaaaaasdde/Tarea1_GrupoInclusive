@@ -1,7 +1,23 @@
 package com.example.tarea3.repository;
 
+import com.example.tarea3.dto.DepartamentoPorCiudadDTO;
+import com.example.tarea3.dto.GerenteExperienciaDTO;
 import com.example.tarea3.model.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 public interface DepartmentRepository extends JpaRepository<Department, Integer> {
+    @Query("SELECT new com.example.tarea3.repository.DepartamentoPorCiudadDTO(d.location.countryId, d.location.city, COUNT(d)) " +
+            "FROM Department d JOIN d.employees e " +
+            "GROUP BY d.location.countryId, d.location.city " +
+            "HAVING COUNT(e) > 3")
+    List<DepartamentoPorCiudadDTO> departamentosConMasDeTresEmpleados();
+
+    @Query("SELECT new com.example.tarea3.repository.GerenteExperienciaDTO(d.departmentName, " +
+            "CONCAT(m.firstName, ' ', m.lastName), m.salary) " +
+            "FROM Department d JOIN d.manager m " +
+            "WHERE FUNCTION('YEAR', CURRENT_DATE) - FUNCTION('YEAR', m.hireDate) > 5")
+    List<GerenteExperienciaDTO> gerentesConExperienciaMayorA5();
+
 }
