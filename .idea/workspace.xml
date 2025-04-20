@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9aa28f2-3dbb-4132-8e8c-2b7e22dae233" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/DepartamentoPorCiudadDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/search/departamentos_por_ciudad.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/search/gerentes_experimentados.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/search/salarios_altos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/controller/SearchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/DepartmentPerCityDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/ExperiencedManagerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/dto/GerenteExperienciaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/repository/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/java/com/example/tarea3/repository/DepartmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea1/src/main/resources/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="b9aa28f2-3dbb-4132-8e8c-2b7e22dae233" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +94,7 @@
       <workItem from="1744337312893" duration="12000" />
       <workItem from="1745036566537" duration="3502000" />
       <workItem from="1745169607897" duration="4235000" />
-      <workItem from="1745173925986" duration="669000" />
+      <workItem from="1745173925986" duration="1052000" />
     </task>
     <servers />
   </component>
