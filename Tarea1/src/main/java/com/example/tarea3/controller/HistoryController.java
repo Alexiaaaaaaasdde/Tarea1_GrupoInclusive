@@ -1,5 +1,5 @@
 package com.example.tarea3.controller;
-
+import com.example.tarea3.dto.DepartamentoPorCiudadDTO;
 import com.example.tarea3.model.Employee;
 import com.example.tarea3.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
