@@ -19,6 +19,10 @@ public class Job {
     @Column(name = "max_salary")
     private Integer maxSalary;
 
+    @ManyToOne
+    @JoinColumn(name = "manager_id")
+    private Employee manager;
+
     // Getters
     public String getJobId() {
         return jobId;
@@ -36,6 +40,10 @@ public class Job {
         return maxSalary;
     }
 
+    public Employee getManager() {
+        return manager;
+    }
+
     // Setters
     public void setJobId(String jobId) {
         this.jobId = jobId;
@@ -51,5 +59,9 @@ public class Job {
 
     public void setMaxSalary(Integer maxSalary) {
         this.maxSalary = maxSalary;
+    }
+
+    public void setManager(Employee manager) {
+        this.manager = manager;
     }
 }
