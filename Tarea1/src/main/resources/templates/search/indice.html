@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head}"></head>
+<body>
+<div th:replace="~{fragments :: menu}"></div>
+
+<div class="container mt-4">
+    <h2>Índice de Reportes</h2>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a th:href="@{/search/salarios-altos}">Empleados con salario mayor a 15000</a>
+        </li>
+    </ul>
+</div>
+
+<div th:replace="~{fragments :: scripts}"></div>
+</body>
+</html>
