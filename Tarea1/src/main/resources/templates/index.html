@@ -1,0 +1,53 @@
+
+<html lang="en">
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head}">
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<div th:replace="~{fragments :: menu}"></div>
+
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Sistema de Gestión de Empleados</h1>
+        <p class="lead">Gestiona tus empleados, consulta su historial y genera reportes.</p>
+        <hr class="my-4">
+        <p>Elige una opción para comenzar:</p>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Gestión de Empleados</h5>
+                        <p class="card-text">Crear, actualizar y eliminar registros de empleados.</p>
+                        <a th:href="@{/employee}" class="btn btn-primary">Gestionar Empleados</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Historial de Empleados</h5>
+                        <p class="card-text">Ver y buscar registros históricos de empleados.</p>
+                        <a th:href="@{/history}" class="btn btn-success">Ver Historial</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Reportes Visuales</h5>
+                        <p class="card-text">Generar informes visuales sobre datos de empleados.</p>
+                        <a th:href="@{/search}" class="btn btn-info">Generar Reportes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:replace="~{fragments :: scripts}"></div>
+</body>
+</html>
