@@ -17,5 +17,8 @@ public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
     @Query("SELECT DISTINCT e FROM Employee e WHERE e.employeeId IN (SELECT DISTINCT emp.manager.employeeId FROM Employee emp WHERE emp.manager IS NOT NULL)")
     List<Employee> findAllManagers();
 
+    List<Employee> findBySalaryGreaterThan(double salario);
+
+
 
 }
