@@ -1,5 +1,13 @@
 package com.example.tarea3.controller;
 
+import com.example.tarea3.dto.DepartamentoPorCiudadDTO;
+import com.example.tarea3.dto.GerenteExperienciaDTO;
+import com.example.tarea3.model.Employee;
+import com.example.tarea3.repository.DepartmentRepository;
+import com.example.tarea3.repository.EmployeeRepository;
+
+import java.util.List;
+
 @Controller
 @RequestMapping("/search")
 public class SearchController {
@@ -17,4 +25,23 @@ public class SearchController {
         model.addAttribute("empleados", empleados);
         return "search/salarios_altos";
     }
+
+    @Autowired
+    private DepartmentRepository departmentRepository;
+
+    @GetMapping("/departamentos-por-ciudad")
+    public String reporteDepartamentosPorCiudad(Model model) {
+        List<DepartamentoPorCiudadDTO> resultados = departmentRepository.departamentosConMasDeTresEmpleados();
+        model.addAttribute("resultados", resultados);
+        return "search/departamentos_por_ciudad";
+    }
+
+    @GetMapping("/gerentes-experimentados")
+    public String reporteGerentesConExperiencia(Model model) {
+        List<GerenteExperienciaDTO> lista = departmentRepository.gerentesConExperienciaMayorA5();
+        model.addAttribute("gerentes", lista);
+        return "search/gerentes_experimentados";
+    }
+
+
 }
