@@ -25,7 +25,6 @@ public class EmployeeController {
 
 
 
-
     @GetMapping
     public String listEmployees(@RequestParam(name = "filter", required = false) String filter, Model model) {
         List<Employee> list;
@@ -51,9 +50,6 @@ public class EmployeeController {
         model.addAttribute("jobs", jobRepository.findAll()); // solo si ya lo tienes
         return "employee/create";
     }
-
-
-
 
     @PostMapping("/save")
     public String saveEmployee(@ModelAttribute Employee employee) {
