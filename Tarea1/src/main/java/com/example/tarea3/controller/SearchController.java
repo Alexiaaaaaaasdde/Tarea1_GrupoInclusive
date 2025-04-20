@@ -16,8 +16,16 @@ import java.util.List;
 @Controller
 @RequestMapping("/search")
 public class SearchController {
+
+    private final EmployeeRepository employeeRepository;
+    private final DepartmentRepository departmentRepository;
+
     @Autowired
-    private EmployeeRepository employeeRepository;
+    public SearchController(EmployeeRepository employeeRepository,
+                            DepartmentRepository departmentRepository) {
+        this.employeeRepository = employeeRepository;
+        this.departmentRepository = departmentRepository;
+    }
 
     @GetMapping
     public String indiceReportes() {
@@ -27,12 +35,9 @@ public class SearchController {
     @GetMapping("/salarios-altos")
     public String empleadosConAltoSalario(Model model) {
         List<Employee> empleados = employeeRepository.findBySalaryGreaterThan(15000);
-        model.addAttribute("empleados", empleados);
+        model.addAttribute("employee", empleados);
         return "search/salarios_altos";
     }
-
-    @Autowired
-    private DepartmentRepository departmentRepository;
 
     @GetMapping("/departamentos-por-ciudad")
     public String reporteDepartamentosPorCiudad(Model model) {
@@ -43,10 +48,8 @@ public class SearchController {
 
     @GetMapping("/gerentes-experimentados")
     public String reporteGerentesConExperiencia(Model model) {
-        List<GerenteExperienciaDTO> lista = departmentRepository.gerentesConExperienciaMayorA5();
-        model.addAttribute("gerentes", lista);
+        List<GerenteExperienciaDTO> gerentes = departmentRepository.gerentesConExperienciaMayorA5();
+        model.addAttribute("gerentes", gerentes);
         return "search/gerentes_experimentados";
     }
-
-
 }

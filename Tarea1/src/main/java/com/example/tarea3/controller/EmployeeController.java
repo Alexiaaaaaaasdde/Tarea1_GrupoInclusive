@@ -15,14 +15,13 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/employee")
-public class EmployeeController {
+public class EmployeeController{
 
     @Autowired
     private EmployeeRepository employeeRepository;
 
     @Autowired
     private JobRepository jobRepository;
-
 
 
     @GetMapping
